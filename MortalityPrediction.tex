@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt]{article}
+
+% Sprachpaket für Deutsch
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% Für PDF-Bilder
+\usepackage{graphicx}
+
+% Paket für Referenzen
+\usepackage{hyperref}
+
+% Titel, Autor und Datum
+\title{Titel der Hausarbeit}
+\author{Dein Name}
+\date{\today}
+
+\begin{document}
+
+% Titelbild
+\maketitle
+
+\begin{abstract}
+Hier kannst du eine kurze Zusammenfassung der Hausarbeit schreiben.
+\end{abstract}
+
+\tableofcontents % Inhaltsverzeichnis
+
+\newpage
+
+\section{Einleitung}
+Ziel dieser Ausarbeitung ist die Unterstützung zur effizienten Mortalitätsverringerung bei Krankheiten/Pandemien, dafür
+wird eine \textit{Prediction} erstellt, in Abhängigkeit von den folgenden Indikatoren.\newline
+Es wird also eine Vorhersage getroffen wie groß die Mortalitätsrate von beliebigen Pandemien ausfällt in Abhängigkeit des
+Status eines Staates. Dafür wird die Datengrundlage von .... genutzt, damit das Modell trainiert werden kann.
+Indes dient diese Ausarbeitung lediglich als Grundlage, da hier nur die Prediction aufgebaut wird. Die Folgearbeit
+behandelt das Optimierungsproblem aufgrundlage der Prediction und den verfügbaren Mitteln eines Staates.\newline
+Dennoch bietet die Prediction einen Einblick in die momentane Erwartungshaltung einer Pandemie
+
+\section{Theoretischer Hintergrund}
+Hier kannst du theoretische Konzepte und die Literatur, auf die du dich stützt, beschreiben.
+
+\section{Methoden}
+In diesem Abschnitt erläuterst du, wie du deine Forschung durchgeführt hast. Zum Beispiel, wenn du ein Jupyter Notebook verwendest, könntest du beschreiben, welche Schritte du unternommen hast.
+
+\section{Ergebnisse}
+Präsentiere die Ergebnisse deiner Forschung. Hier kannst du auch Diagramme und Bilder einfügen.
+
+\section{Diskussion}
+In der Diskussion analysierst du die Ergebnisse und ziehst Schlussfolgerungen.
+
+\section{Fazit}
+Fasse deine wichtigsten Erkenntnisse zusammen und gib einen Ausblick auf mögliche weitere Forschung.
+
+\newpage
+
+% Anhang für das Jupyter Notebook
+\appendix
+\section{Anhang: Jupyter Notebook}
+Hier kannst du dein Jupyter Notebook einfügen. Eine Möglichkeit, ein Jupyter Notebook als Anhang einzufügen, ist die Umwandlung des Notebooks in ein PDF oder ein anderes unterstütztes Format und das Hinzufügen als Bild oder Dokument.
+
+% Beispiel für ein eingefügtes PDF des Jupyter Notebooks
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{notebook.pdf}
+    \caption{Jupyter Notebook als Anhang}
+\end{figure}
+
+\end{document}

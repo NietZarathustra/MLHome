@@ -1,7 +1,8 @@
 jupyter
-
 pandas
-numpy
-matplotlib==3.6.2
-pytorch==2.5.1
+numpy>=1.21
+matplotlib
+torch
 kagglehub
+scikit-learn
+seaborn
