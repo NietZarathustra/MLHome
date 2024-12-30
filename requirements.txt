@@ -2,7 +2,7 @@ jupyter
 pandas
 numpy>=1.21
 matplotlib
-torch
+
 kagglehub
 scikit-learn
 seaborn
