@@ -1,0 +1,112 @@
+\documentclass[a4paper,12pt]{article}
+
+% Sprachpaket für Deutsch
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% Für PDF-Bilder
+\usepackage{graphicx}
+
+% Paket für Referenzen
+\usepackage{hyperref}
+
+% Titel, Autor und Datum
+\title{Brustkrebs Indicatoren}
+\author{Timo Michaelis}
+\date{\today}
+
+\begin{document}
+
+% Titelbild
+\maketitle
+
+\begin{abstract}
+Im Folgenden wird versucht anhand verschiedener Indikatoren zur prognostizieren, ob eine Patientin Brustkrebs besitzt.
+    Dieses Model dient lediglich der Hilfestellung, nicht aber dem Ersatz eines fachkundigen Arztes
+\end{abstract}
+
+\tableofcontents % Inhaltsverzeichnis
+
+\newpage
+
+\section{Einleitung}
+In der vorliegenden Arbeit wird eine Unterstützung zur Erkennung von Brustkrebs geboten. Dafür werden verschiedene Eigenschaft
+u.a. \textit{durchschnittlicher Radius, durchschnittliche Textur, usw.} berücksichtigt und eine wahrscheinliche Prognose geboten.\newline
+Das Ziel dieser Arbeit ist es somit ein Modell zu erstellen, welches bei Input der benötigten Parameter eine vorläufige Diagnose stellt,
+welche etwaig dem Patienten bzw. dem Arzt zu einer genaueren Untersuchen verleiten. Dies verringert somit nicht nur die die Chance von
+sogenannten \textit{false positives}, sondern kann auch die Bereitschaft unterstützen häufiger notwendige Untersuchungen
+durchzuführen, da die Untersuchung weniger komplex wird.\newline
+%Literaturarbeit
+Im folgenden wird grundsätzlich der Ursprung und Inhalt des Datensatzes diskutiert, sowie die darauf angewandten Methoden näher erläutert.
+
+
+
+
+\section{Datensatz}
+Der verwendete Datensatz stammt aus der \textit{Global Health Statisitic}, sie besitz eine Public Domain Lizenz und wird jährlich updated\newline
+Folgende Daten sind enthalten
+\begin{itemize}
+    \item mean radius
+    \item mean texture
+    \item mean perimeter
+    \item mean area
+    \item mean smoothness
+    \item mean compactness
+    \item mean concavity
+    \item mean concave points
+    \item mean symmetry
+    \item mean fractal dimension
+    \item radius error
+    \item texture error
+    \item perimeter error
+    \item area error
+    \item smoothness error
+    \item compactness error
+    \item concavity error
+    \item concave points error
+    \item symmetry error
+    \item fractal dimension error
+    \item worst radius
+    \item worst texture
+    \item worst perimeter
+    \item worst area
+    \item worst smoothness
+    \item worst compactness
+    \item worst concavity
+    \item worst concave points
+    \item worst symmetry
+    \item worst fractal dimension
+\end{itemize}
+
+
+
+\section{Methoden}
+Als Methoden zur Erstellung des Vorhersagen Algorithmus habe ich zuerst \textit{ RandomForestRegression} benutzt, anschließend nutzte ich
+\textit{SVR (Support Vector Regression)}.
+\subsection{Random Forest Regression}
+\subsection{Support Vector Regression}
+\section{Ergebnisse}
+Folgende Ergebnisse ergaben die Predictions
+\subsection{Random Forest Regression}
+\subsection{Support Vector Regression}
+\section{Diskussion}
+In der Diskussion analysierst du die Ergebnisse und ziehst Schlussfolgerungen.
+
+\section{Fazit}
+Mittels dieser Prediction lässt sich die Bereitschaft auf bestimmte Krankheiten bestimmen, ein weiterer Aspekt wäre die
+Spezifierungsmöglichkeit der Krankheit oder der zu betrachtenden Probanten, hierzu
+\newpage
+
+% Anhang für das Jupyter Notebook
+\appendix
+\section{Anhang: Jupyter Notebook}
+Hier kannst du dein Jupyter Notebook einfügen. Eine Möglichkeit, ein Jupyter Notebook als Anhang einzufügen, ist die Umwandlung des Notebooks in ein PDF oder ein anderes unterstütztes Format und das Hinzufügen als Bild oder Dokument.
+
+% Beispiel für ein eingefügtes PDF des Jupyter Notebooks
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{notebook.pdf}
+    \caption{Jupyter Notebook als Anhang}
+\end{figure}
+
+\end{document}
