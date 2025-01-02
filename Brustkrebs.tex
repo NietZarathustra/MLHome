@@ -9,6 +9,7 @@
 
 % Paket für Referenzen
 \usepackage{hyperref}
+\usepackage{biblatex}
 
 % Titel, Autor und Datum
 \title{Brustkrebs Indicatoren}
@@ -43,8 +44,8 @@ Im folgenden wird grundsätzlich der Ursprung und Inhalt des Datensatzes diskuti
 
 
 \section{Datensatz}
-Der verwendete Datensatz stammt aus der \textit{Global Health Statisitic}, sie besitz eine Public Domain Lizenz und wird jährlich updated\newline
-Folgende Daten sind enthalten
+Der verwendete Datensatz stammt aus der \textit{Diagnostic Wisconsin Breast Cancer Database.}\cite*{sth}, wie erwartet befasst sich dieser
+Datensatz mit Gesundheitlichen Aspekten und besitzt indes folgende \textit{Features}
 \begin{itemize}
     \item mean radius
     \item mean texture
@@ -77,18 +78,42 @@ Folgende Daten sind enthalten
     \item worst symmetry
     \item worst fractal dimension
 \end{itemize}
-
-
+Hinzu kommt noch der \textit{Target-Datensatz}, welcher beschreibt ob der Datenpunkt jeweils \textit{Malignand} oder \textit{Benign}
+ist.\newline
+Bevor näher auf den Datensatz und seine zusammenhänge eingegangen wird, gilt es zu beurteilen inweit aufbereitet dieser ist.
+Hiefür sei relevant zu testen ob teile nicht aufgefüllt sind, und man gegebenenfalls Teile löschen muss. Desweiteren sei noch der Typus
+der Daten Konsistent und es sei zu überrpüfen, ob es unsinnige Einträge, wie einen negativen Radius gibt.
+Dies wurde überprüft und der Datensatz ist vorbereitet.\newline
+Desweiteren sei noch zu überprüfen wie viele Ausreißer dieser Datensatz besitzt und ob diese gegebenenfalls zu entfernen seien.
+Dafür wurden mehrere Boxplot-Graphen erstellt, welche zwar Ausreißer angeben, diese sind physikalisch möglich und indes nicht ohne
+beeinträchtigungen (underfitting) zu entfernen
+\newline
+%images boxplot und code?
+Zur Frage ob es Abhängigkeiten zwischen den Features und dem Target gibt, lässt sich dazu eine Grundidee fassen, indem man verschiedene
+Features im zwei Dimensionalen gegeneinander aufträgt:\newline
+%image graph
+Ebenfalls lässt sich mittels von Korrellationstabellen ebenfalls Korrellationen nachweisen, weswegen nun nur noch die geignete Methode
+zu Erstellung eines Prediction-Algorithmus benötigt wird
+\newline
 
 \section{Methoden}
-Als Methoden zur Erstellung des Vorhersagen Algorithmus habe ich zuerst \textit{ RandomForestRegression} benutzt, anschließend nutzte ich
-\textit{SVR (Support Vector Regression)}.
-\subsection{Random Forest Regression}
-\subsection{Support Vector Regression}
+Es existieren zwei Kategorien in welche unsere Features einsortiert werden, insofern seien Algorithmen notwendig welche eine Klassifikation durchführen.
+Für kleinere Datensätze, wie hier vorliegend, ist \textit{ RandomForestClassifier} gut zu nutzen und da bereits aus Graph
+eine perfekte lineare separierung nicht möglich ist, ist \textit{SVM (Support Vector Machine)} ein passender Algorithmus.
+\subsection{Random Forest Classifier}
+Der Random Forest Classifier nutzt eine gewisse Anzahl an verschiedenen Entscheidungsbäumen mit dem Ziel die korrekte Entscheidung zu erfüllen,
+dies führt dazu, dass die Nachteile eines Entscheidungsbaumes verringert (wie z.B. \textit{overfitting})
+\subsection{Support Vector Machine}
+Ein SVM nutzt die Tatsache aus, dass selbst wenn eine Separierbarkeit z.B. im 2-Dimensionalen nicht machbar ist,
+diese in höheren Dimensionen durchaus möglich ist.
+\subsubsection{Kernel}
+
 \section{Ergebnisse}
-Folgende Ergebnisse ergaben die Predictions
-\subsection{Random Forest Regression}
-\subsection{Support Vector Regression}
+Um das bestmöglichste Ergebniss zu erzielen, wurde ein Grid angewandt damit die bessere Anzahl an Entscheidungsbäumen bzw.
+des Wertes der Fehlklassifizierungsstrafe genutzt werden kann.
+\subsection{Random Forest Classifier}
+
+\subsection{Support Vector Machine}
 \section{Diskussion}
 In der Diskussion analysierst du die Ergebnisse und ziehst Schlussfolgerungen.
 
