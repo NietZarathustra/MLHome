@@ -1,0 +1,14 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Datensatz}{2}{section.2}%
+\contentsline {section}{\numberline {3}Methoden}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Random Forest Classifier}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Support Vector Machine}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Kernel}{8}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {4}Ergebnisse}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Random Forest Classifier}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Support Vector Machine}{11}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{16}{section.6}%
+\contentsline {section}{\numberline {A}Anhang: Erklärung}{17}{appendix.A}%
+\contentsline {section}{\numberline {B}Anhang: Jupyter Notebook}{17}{appendix.B}%

@@ -1,0 +1,19 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Brustkrebs.blg'
+[152] biber-MSWIN64:340> INFO - === 
+[201] Biber.pm:419> INFO - Reading 'Brustkrebs.bcf'
+[393] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[416] Biber.pm:4419> INFO - Processing section 0
+[431] Biber.pm:4610> INFO - Looking for bibtex file 'bibtex.bib' for section 0
+[506] bibtex.pm:1713> INFO - LaTeX decoding ...
+[521] bibtex.pm:1519> INFO - Found BibTeX data source 'bibtex.bib'
+[525] Utils.pm:410> ERROR - Name "Wolberg, William, Mangasarian, Olvi, Street, Nick," has too many commas, skipping entry 'breast_cancer_wisconsin_diagnostic_17'
+[544] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[544] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[544] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[544] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[545] bbl.pm:660> INFO - Writing 'Brustkrebs.bbl' with encoding 'UTF-8'
+[545] bbl.pm:763> INFO - Output to Brustkrebs.bbl
+[546] Biber.pm:131> WARN - Entry with key 'breast_cancer_wisconsin_diagnostic_17' in section '0' is cited and found but not created (likely due to sourcemap)
+[546] Biber.pm:133> INFO - WARNINGS: 1
+[546] Biber.pm:136> INFO - ERRORS: 1
